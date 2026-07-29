@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop | Ronnie Tech</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">⚡ Ronnie Tech</div>
+        <div class="brand">
+            <div class="logo-icon"><i data-lucide="zap" fill="currentColor"></i></div>
+            <div class="brand-text">
+                <span class="brand-name">Ronnie Tech</span>
+                <span class="brand-sub">ENGINEERING & SHOP</span>
+            </div>
+        </div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="products.html" class="active">Shop</a>
@@ -16,25 +24,22 @@
         </div>
     </nav>
 
-    <main class="container">
-        <div class="page-header">
-            <h2>Electronics Shop</h2>
-            <p>Browse our catalog. Order instantly via WhatsApp.</p>
-            <div class="category-filters" id="product-filters">
-                <!-- Filters injected via JS -->
-            </div>
-        </div>
+    <header class="page-header dark-bg">
+        <h1>Electronics Shop</h1>
+        <p>Premium electrical components and home electronics.</p>
+    </header>
 
-        <div class="grid" id="product-grid">
-            <!-- Products injected via JS -->
+    <main class="container">
+        <div class="grid" id="all-products">
+            <!-- All Products injected via JS -->
         </div>
     </main>
 
     <div class="bottom-nav">
-        <a href="index.html">🏠<br>Home</a>
-        <a href="products.html">🛒<br>Shop</a>
-        <a href="services.html">🛠️<br>Services</a>
-        <a href="https://wa.me/256772901734" target="_blank">💬<br>Contact</a>
+        <a href="index.html"><i data-lucide="home"></i><span>Home</span></a>
+        <a href="products.html" class="active"><i data-lucide="shopping-cart"></i><span>Shop</span></a>
+        <a href="services.html"><i data-lucide="wrench"></i><span>Services</span></a>
+        <a href="https://wa.me/256772901734" target="_blank"><i data-lucide="message-circle"></i><span>Contact</span></a>
     </div>
 
     <script src="app.js"></script>
