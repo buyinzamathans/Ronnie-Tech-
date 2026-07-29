@@ -123,3 +123,13 @@ h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
 }
 .bottom-nav a.active { color: var(--primary-dark); }
 .bottom-nav a.active i { color: var(--accent-yellow); }
+/* WhatsApp Bottom Nav Styling */
+.bottom-nav a.nav-wa-btn {
+    color: var(--whatsapp-green);
+}
+.bottom-nav a.nav-wa-btn svg {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 2px;
+}
+
