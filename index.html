@@ -3,38 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ronnie Tech | Electronics & Wiring Services</title>
+    <title>Ronnie Electricals | Engineering Uganda</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Premium Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+        <a href="https://wa.me/256772901734" target="_blank" class="fab fab-wa"><i data-lucide="message-circle"></i></a>
+        <a href="tel:+256772901734" class="fab fab-call"><i data-lucide="phone"></i></a>
+    </div>
+
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">⚡ Ronnie Tech</div>
-        <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="products.html">Shop</a>
-            <a href="services.html">Services</a>
+        <div class="brand">
+            <div class="logo-icon"><i data-lucide="zap" fill="currentColor"></i></div>
+            <div class="brand-text">
+                <span class="brand-name">Ronnie Electricals</span>
+                <span class="brand-sub">ENGINEERING • UGANDA</span>
+            </div>
         </div>
+        <button class="menu-btn"><i data-lucide="menu"></i></button>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Expert Home Wiring & Quality Electronics</h1>
-            <p>Your one-stop solution for professional electrical services and authentic electronics.</p>
-            <div class="hero-buttons">
-                <a href="services.html" class="btn primary">Book a Service</a>
-                <a href="products.html" class="btn secondary">Shop Electronics</a>
+    <!-- Dark Hero Section -->
+    <header class="hero-section">
+        <div class="pill-badge">
+            <i data-lucide="sparkles" size="14"></i> LICENSED ELECTRICAL ENGINEER
+        </div>
+        
+        <h1>Powering Homes & Businesses with Professional Electrical Solutions</h1>
+        <p>Reliable electrical installations, repairs, maintenance and engineering services delivered with safety, quality and professionalism — across Uganda.</p>
+        
+        <div class="hero-actions">
+            <a href="https://wa.me/256772901734?text=Hello%20Ronnie%20Electricals,%20I%20would%20like%20to%20request%20a%20quote." class="btn btn-primary">Request a Quote <i data-lucide="arrow-right" size="18"></i></a>
+            <a href="tel:+256772901734" class="btn btn-outline">
+                <i data-lucide="phone" size="18"></i> Call Now
+            </a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat"><span class="stat-num">500+</span><span class="stat-label">PROJECTS<br>DONE</span></div>
+            <div class="stat"><span class="stat-num">10 yrs</span><span class="stat-label">EXPERIENCE</span></div>
+            <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">EMERGENCY</span></div>
+        </div>
+
+        <div class="hero-image-wrapper">
+            <!-- Replace with actual high-res image -->
+            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop" alt="Electrical Engineer">
+            <div class="hero-image-card">
+                <div class="card-icon-yellow"><i data-lucide="shield-check"></i></div>
+                <div class="card-text">
+                    <strong>Safety-first installations</strong>
+                    <span>Code-compliant • fully insured</span>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Shared Bottom Nav for Mobile -->
-    <div class="bottom-nav">
-        <a href="index.html">🏠<br>Home</a>
-        <a href="products.html">🛒<br>Shop</a>
-        <a href="services.html">🛠️<br>Services</a>
-        <a href="https://wa.me/256772901734" target="_blank">💬<br>Contact</a>
-    </div>
+    <!-- Trust Badges Section -->
+    <section class="trust-section">
+        <div class="trust-grid">
+            <div class="trust-item"><i data-lucide="shield"></i> Licensed & Insured</div>
+            <div class="trust-item"><i data-lucide="clock"></i> On-Time Response</div>
+            <div class="trust-item"><i data-lucide="wallet"></i> Transparent Pricing</div>
+            <div class="trust-item"><i data-lucide="check-circle"></i> Quality Guaranteed</div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="section-header">
+            <span class="section-subtitle">WHAT WE DO</span>
+            <h2>A full-service electrical partner you can trust.</h2>
+            <a href="#" class="text-link">View all services <i data-lucide="arrow-right" size="16"></i></a>
+        </div>
+
+        <div class="service-cards" id="services-container">
+            <!-- Injected via JS -->
+        </div>
+    </section>
+
+    <!-- Dark Features Section -->
+    <section class="features-section">
+        <div class="pill-badge dark">
+            <i data-lucide="user"></i> About Ronnie <i data-lucide="arrow-right"></i>
+        </div>
+        
+        <div class="feature-cards" id="features-container">
+             <!-- Injected via JS -->
+        </div>
+    </section>
+
+    <!-- Gallery / Recent Work -->
+    <section class="gallery-section">
+        <div class="section-header">
+            <span class="section-subtitle">RECENT WORK</span>
+            <h2>Projects that speak for themselves.</h2>
+            <a href="#" class="text-link">See gallery <i data-lucide="arrow-right" size="16"></i></a>
+        </div>
+
+        <div class="gallery-grid" id="gallery-container">
+            <!-- Injected via JS -->
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <span class="section-subtitle">CLIENT STORIES</span>
+            <h2>Trusted by families and businesses across Uganda.</h2>
+        </div>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <p>"Ronnie rewired our whole house in 3 days. Clean, fast and very professional — and the price was exactly what he quoted."</p>
+                <div class="client-info">
+                    <div class="avatar">P</div>
+                    <div>
+                        <strong>Patricia N.</strong>
+                        <span>Homeowner, Kampala</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <p>"Our 6kW solar system has been flawless since installation. Their team is punctual, polite and they really know solar."</p>
+                <div class="client-info">
+                    <div class="avatar dark-avatar">S</div>
+                    <div>
+                        <strong>Sarah K.</strong>
+                        <span>Property Manager, Wakiso</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="pill-badge dark">
+            <i data-lucide="zap"></i> AVAILABLE NOW
+        </div>
+        <h2>Count on us.</h2>
+        <p>Get a free, no-obligation quote in minutes. We'll diagnose, advise and give you an honest price — no pressure.</p>
+        <div class="cta-buttons">
+            <a href="https://wa.me/256772901734?text=I%20need%20a%20quote" class="btn btn-primary w-100">Request a Quote <i data-lucide="arrow-right" size="18"></i></a>
+            <a href="https://wa.me/256772901734" class="btn btn-outline w-100">Chat on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-links">
+                <h3>QUICK LINKS</h3>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h3>GET IN TOUCH</h3>
+                <p><i data-lucide="phone" size="16"></i> +256 772 901 734</p>
+                <p><i data-lucide="mail" size="16"></i> info@ronnieelectricals.ug</p>
+                <p><i data-lucide="map-pin" size="16"></i> Kampala, Uganda — serving nationwide</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Ronnie Electricals. All rights reserved.</p>
+            <p>Licensed Electrical Engineer • Available 24/7 for emergencies</p>
+        </div>
+    </footer>
 
     <script src="app.js"></script>
 </body>
