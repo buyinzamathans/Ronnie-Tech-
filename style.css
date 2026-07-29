@@ -1,0 +1,188 @@
+:root {
+    --primary: #0f172a; /* Deep tech blue/black */
+    --accent: #3b82f6; /* Electric blue */
+    --bg-light: #f8fafc;
+    --text-main: #334155;
+    --text-dark: #0f172a;
+    --white: #ffffff;
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    padding-bottom: 70px; /* Space for mobile nav */
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Archivo', sans-serif;
+    color: var(--text-dark);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    margin-left: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: var(--accent);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary), #1e293b);
+    color: var(--white);
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.hero h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: var(--white);
+}
+
+.btn.secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Main Container & Grids */
+.container {
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Cards (Products & Services) */
+.card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+.card-price {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.wa-btn {
+    background: #25D366; /* WhatsApp Green */
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+/* Mobile Bottom Nav */
+.bottom-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide desktop links on mobile */
+    }
+    
+    .bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: var(--white);
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        justify-content: space-around;
+        padding: 0.8rem 0;
+        z-index: 1000;
+    }
+
+    .bottom-nav a {
+        text-decoration: none;
+        color: var(--text-main);
+        text-align: center;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+}
