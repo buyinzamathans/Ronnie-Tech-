@@ -70,7 +70,34 @@
     </main>
 
     <!-- Shared Bottom Nav for Mobile -->
-    <div class="bottom-nav">
+    /* Jahri Web Studios Developer Tag */
+.developer-tag {
+    text-align: center;
+    padding: 2rem 5% 4rem; /* Extra padding on mobile so the bottom nav doesn't cover it */
+    font-size: 0.75rem;
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+.developer-tag a {
+    color: var(--primary-dark);
+    font-weight: 800;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.developer-tag a:hover {
+    color: var(--accent-yellow);
+}
+
+/* Adjust padding for Desktop where there is no bottom nav */
+@media (min-width: 768px) {
+    .developer-tag {
+        padding-bottom: 2rem; 
+    }
+}
+
+<div class="bottom-nav">
         <a href="index.html" class="active"><i data-lucide="home"></i><span>Home</span></a>
         <a href="products.html"><i data-lucide="shopping-cart"></i><span>Shop</span></a>
         <a href="services.html"><i data-lucide="wrench"></i><span>Services</span></a>
